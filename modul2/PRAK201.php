@@ -23,7 +23,7 @@
     <?php
         $nama = [];
         if($_SERVER["REQUEST_METHOD"] == "POST"){
-            if(isset($_POST['nama'])){
+            if(($_POST['nama'])){
                 $nama = $_POST['nama'];
                 echo "<b>Output</b><br>";
             }
