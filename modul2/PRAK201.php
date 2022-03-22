@@ -26,11 +26,11 @@
             if(($_POST['nama'])){
                 $nama = $_POST['nama'];
                 echo "<b>Output</b><br>";
+                sort($nama);
+                   foreach ($nama as $index => $isi){
+                echo "$isi<br>";
+                }
             }
-        }
-        sort($nama);
-        foreach ($nama as $index => $isi){
-            echo "$isi<br>";
         }
 
     ?>
