@@ -21,14 +21,19 @@
             $panjangkata = strlen($kata);
             $i = 0;
 
-            while($i < $panjangkata){
-                $k = $panjangkata;
+            echo "<h2>Input</h2>";
+            echo "$kata";
+            echo "<br>";
+            echo "<h2>Output</h2>";
 
-                while($k > 0){
-                    if ($k == $panjangkata){
+            while($i < $panjangkata){
+                $j = $panjangkata;
+
+                while($j > 0){
+                    if ($j == $panjangkata){
                         echo strtoupper($kata[$i]);
                     } else echo strtolower($kata[$i]);
-                    $k--;
+                    $j--;
                 }
 
                 $i++;
