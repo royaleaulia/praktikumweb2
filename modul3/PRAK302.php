@@ -1,11 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 <style type="text/css">
     img {
         width : 16px;
         height : 16px;
     }
     td {
-        float : right;
+        text-align : right;
     }
 </style>
 <body>
@@ -25,7 +31,7 @@
                 $tinggi = htmlspecialchars($_POST['tinggi']);
             }
             if (isset($_POST['alamatgambar'])){
-                $alamatgambar = $_POST['alamatgambar'];
+                $alamatgambar =htmlspecialchars($_POST['alamatgambar']);
             }
             $batas = 0;
             echo "<table>";
